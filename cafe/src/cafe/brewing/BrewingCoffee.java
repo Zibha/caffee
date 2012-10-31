@@ -13,5 +13,13 @@ public class BrewingCoffee extends BrewingDrinks {
 		System.out.println("Podano kawe");
 		
 	}
+        
+        @Override
+	protected void addSugar() {
+		System.out.println("Dodano" + getSugarAmount()+ "lyzeczke cukru");
+	}
+        @Override
+	protected String getSugarAmount(){
+		return "2";
 
 }
